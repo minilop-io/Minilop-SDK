@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Notes</h1>
+    <div id="signin" hidden></div>
+
+    <section id="mine" hidden>
+      <form id="add"><input name="text" placeholder="Something to remember" required autocomplete="off"><button>Add</button></form>
+      <ul id="notes"></ul>
+    </section>
+
+    <section>
+      <h2>Guestbook</h2>
+      <form id="sign" hidden><input name="message" placeholder="Say hello" required maxlength="200" autocomplete="off"><button>Sign</button></form>
+      <ul id="guestbook"></ul>
+    </section>
+  </main>
+  <script src="/_minilop/sdk.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

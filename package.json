@@ -1,0 +1,18 @@
+{
+  "name": "minilop",
+  "version": "1.0.0",
+  "description": "Sign-in and a database for apps hosted on Minilop.",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "types": "minilop.d.ts",
+  "exports": {
+    ".": { "types": "./minilop.d.ts", "default": "./index.js" },
+    "./minilop.js": "./minilop.js"
+  },
+  "files": ["index.js", "minilop.js", "minilop.d.ts"],
+  "sideEffects": ["./minilop.js", "./index.js"],
+  "scripts": { "test": "node --test test/*.test.js" },
+  "repository": { "type": "git", "url": "https://github.com/minilop-io/Minilop-SDK.git" },
+  "homepage": "https://minilop.io"
+}

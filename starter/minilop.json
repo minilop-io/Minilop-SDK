@@ -1,0 +1,7 @@
+{
+  "name": "Notes",
+  "tables": {
+    "notes": { "access": "private", "columns": { "text": "text", "done": "bool" } },
+    "guestbook": { "access": "public", "columns": { "message": "text", "name": "text" } }
+  }
+}
